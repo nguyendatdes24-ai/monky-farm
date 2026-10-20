@@ -1,0 +1,13 @@
+# Operating System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Raw source assets not used by the web app (prevents exceeding GitHub recommended size limits)
+assets/images/design/
+assets/images/mockup/
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.log
