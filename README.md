@@ -75,21 +75,23 @@ MONKY_FARM/
 
 ---
 
-## 🌐 5. HƯỚNG DẪN TRIỂN KHAI ONLINE (HOSTING / DEPLOYMENT)
+## 🌐 5. ĐỊA CHỈ TRỰC TUYẾN & TRIỂN KHAI (LIVE HOSTING)
 
-### Lựa chọn 1: GitHub Pages (Miễn phí & Nhanh nhất)
-1. Tạo một repository mới trên GitHub (ví dụ: `monky-farm-portfolio`).
-2. Đẩy toàn bộ thư mục lên nhánh `main`:
-   ```bash
-   git init
-   git add .
-   git commit -m "feat: release Monky Farm portfolio website"
-   git branch -M main
-   git remote add origin https://github.com/<username>/monky-farm-portfolio.git
-   git push -u origin main
-   ```
-3. Vào **Settings** > **Pages** > chọn Branch `main` > Save. Trang web sẽ trực tuyến tại `https://<username>.github.io/monky-farm-portfolio/`.
+### 🌟 Trang web đã được xuất bản chính thức trực tuyến:
+- **🌐 Website Live (GitHub Pages):** [https://nguyendatdes24-ai.github.io/monky-farm/](https://nguyendatdes24-ai.github.io/monky-farm/)
+- **📦 GitHub Repository:** [https://github.com/nguyendatdes24-ai/monky-farm](https://github.com/nguyendatdes24-ai/monky-farm)
 
-### Lựa chọn 2: Vercel / Netlify (Kéo thả 30 giây)
-1. Đăng nhập [Vercel](https://vercel.com) hoặc [Netlify](https://netlify.com).
-2. Kéo thả toàn bộ thư mục `MONKY_FARM` vào mục **Deploy**. Trang web sẽ được cấp phát tên miền SSL tự động hoàn toàn miễn phí.
+### 🔄 Cách cập nhật mã nguồn lên web sau này:
+Mỗi khi bạn có chỉnh sửa hình ảnh hoặc nội dung, chỉ cần mở PowerShell trong thư mục này và chạy:
+```bash
+git add .
+git commit -m "Cập nhật nội dung mới"
+git push
+```
+GitHub Pages sẽ tự động cập nhật phiên bản mới sau khoảng 30 - 60 giây!
+
+### ⚡ Tùy chọn Hosting mở rộng (Vercel / Netlify):
+Nếu muốn gắn tên miền riêng (ví dụ: `monkyfarm.vn` hoặc `monkyfarm.design`):
+1. Đăng nhập [Vercel](https://vercel.com) hoặc [Netlify](https://netlify.com) bằng tài khoản GitHub `nguyendatdes24-ai`.
+2. Chọn "Import Git Repository" > Chọn `monky-farm`.
+3. Bấm **Deploy**. Vercel/Netlify sẽ cấp chứng chỉ SSL miễn phí và hỗ trợ gắn tên miền riêng trong 1 cú nhấp chuột.
